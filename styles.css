@@ -59,7 +59,7 @@ header{
 }
 
 .hero-btn{
-    background-color: rgba(73, 30, 10, 1);
+    background-color: #491E0A;
     color: white;
     font-weight: 500;
     font-size: 20px;
@@ -67,4 +67,35 @@ header{
     height: 72px;
     border-radius: 100px;
     margin-top: 30px;
+}
+
+.hero-btn:hover{
+    cursor: pointer;
+    background-color: rgba(103, 50, 20, 1);
+}
+
+.hero-image-circle-text{
+    width: 268px;
+}
+
+.hero-image-blue-packet-icecream{
+    width: 500px
+}
+
+.hero-healthy-block{
+    
+}
+
+.healthy-img{
+    width: 221px;
+}
+
+.healthy-text{
+    border: 2px solid black;
+    width: 221px;
+    height: 250px;
+}
+
+.healthy-play-btn{
+    border-radius: 100px;
 }
