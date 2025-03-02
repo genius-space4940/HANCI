@@ -1,12 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* Основні теги */
 body{
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
 }
 
 header{
@@ -15,28 +16,54 @@ header{
     height: 900px;
 }
 
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+[class *= "-container"] {
+    width: 1200px;
+    margin: 0 auto;
+}
+
 /* Логотип */
 .logo{
     margin: 0 156px;
 }
 
+/* Wrapper */
+.wrapper{
+    height: 200vh;
+}
+
+/* Menu */
+.menu{
+    display: flex;
+    gap: 40px;
+}
+
 /* Header */
 .header-nav{
     background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-    margin-top: 50px;
     border-radius: 50px;
-    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
 }
 
 .header-link{
     color: black;
-    text-decoration: none;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .header-link:hover{
@@ -46,11 +73,26 @@ header{
 /* Hero container */
 .hero-container{
     margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr 1.2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    height: 90vh;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "hero__text hero-image hero-image healthy_block"
+        "hero__text hero-image hero-image healthy_block"
+        "red-icecream hero-image hero-image jam"
+        "red-icecream hero-image hero-image jam";
+    position: relative;
 }
 
 .hero-text-btn{
     width: 352px;
-    padding-top: 100px
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
 }
 
 .hero-text{
@@ -83,7 +125,10 @@ header{
 }
 
 .hero-healthy-block{
-    
+    grid-area: healthy_block;
+    display: flex;
+    justify-content: center;
+    position: relative;
 }
 
 .healthy-img{
