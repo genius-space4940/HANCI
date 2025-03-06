@@ -89,12 +89,15 @@ li{
 }
 
 .hero-text-btn{
+    width: 352px;
+    position: absolute;
     grid-area: hero-text-btn;
-    padding-top: 100px;
+    top: 100px;
     display: flex;
     flex-direction: column;
     justify-content: end;
     gap: 20px;
+
 }
 
 .hero-text{
@@ -112,6 +115,7 @@ li{
     border-radius: 50px;
     margin-bottom: 40px;
     width: 250px;
+    padding: 24px 60px;
 }
 
 .hero-btn:hover{
@@ -119,11 +123,19 @@ li{
 }
 
 .hero-image-circle-text{
-    width: 268px;
+    width: 210px;
+    position: absolute;
+    top: 315px;
+    left: 340px;
+    z-index: 2;
 }
 
 .hero-image-blue-packet-icecream{
-    width: 500px
+    width: 500px;
+    position: absolute;
+    top: 100px;
+    left: 350px;
+    z-index: 1;
 }
 
 .hero-healthy-block{
@@ -133,16 +145,38 @@ li{
     position: relative;
 }
 
+.healthy-border{
+    height: 250px;
+    width: 220px;
+
+    position: absolute;
+    bottom: -120px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    font-size: 20px;
+    border: 2px solid #000;
+    border-bottom-right-radius: 150px;
+    border-bottom-left-radius: 150px;
+}
+
 .healthy-img{
-    width: 221px;
+    width: 210px;
+    position: absolute;
+    left: 0;    
+    top: -150px;
 }
 
 .healthy-text{
-    border: 2px solid black;
     width: 221px;
     height: 250px;
+    position: absolute;
 }
 
 .healthy-play-btn{
     border-radius: 100px;
+    position: absolute;
 }
