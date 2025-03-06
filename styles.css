@@ -85,14 +85,16 @@ li{
         "red-icecream hero-image hero-image jam"
         "red-icecream hero-image hero-image jam";
     position: relative;
+    top: 94px;
 }
 
 .hero-text-btn{
-    width: 352px;
+    grid-area: hero-text-btn;
     padding-top: 100px;
     display: flex;
     flex-direction: column;
     justify-content: end;
+    gap: 20px;
 }
 
 .hero-text{
@@ -103,16 +105,16 @@ li{
 .hero-btn{
     background-color: #491E0A;
     color: white;
+    padding: 10px 40px;
     font-weight: 500;
-    font-size: 20px;
-    width: 259px;
-    height: 72px;
-    border-radius: 100px;
-    margin-top: 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 50px;
+    margin-bottom: 40px;
+    width: 250px;
 }
 
 .hero-btn:hover{
-    cursor: pointer;
     background-color: rgba(103, 50, 20, 1);
 }
 
