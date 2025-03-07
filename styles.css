@@ -4,15 +4,13 @@
 body{
     font-family: 'Poppins', sans-serif;
     margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     box-sizing: border-box;
+    background: #FEFDFD;
 }
 
 header{
-    background-color: rgb(244, 240, 237, 1);
-    width: 1200px;
+    background-color: rgb(244, 240, 237);
+    width: 100%;
     height: 900px;
 }
 
@@ -29,11 +27,6 @@ li{
     margin: 0 auto;
 }
 
-/* Логотип */
-.logo{
-    margin: 0 156px;
-}
-
 /* Wrapper */
 .wrapper{
     height: 200vh;
@@ -47,14 +40,15 @@ li{
 
 /* Header */
 .header-nav{
+    width: 80%;
     background-color: white;
     border-radius: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 5px 20px;
     position: absolute;
-    top: 20px;
+    top: 50px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 100;
@@ -63,7 +57,7 @@ li{
 .header-link{
     color: black;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .header-link:hover{
@@ -126,7 +120,7 @@ li{
     width: 210px;
     position: absolute;
     top: 315px;
-    left: 340px;
+    left: 390px;
     z-index: 2;
 }
 
@@ -134,15 +128,16 @@ li{
     width: 500px;
     position: absolute;
     top: 100px;
-    left: 350px;
+    left: 400px;
     z-index: 1;
 }
 
 .hero-healthy-block{
     grid-area: healthy_block;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     position: relative;
+    top: 20px;
 }
 
 .healthy-border{
@@ -167,16 +162,42 @@ li{
     width: 210px;
     position: absolute;
     left: 0;    
-    top: -150px;
+    top: -145px;
 }
 
 .healthy-text{
-    width: 221px;
+    width: 135px;
     height: 250px;
     position: absolute;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
 }
 
 .healthy-play-btn{
-    border-radius: 100px;
+    width: 64px;
+    height: 64px;
+    background-color: rgba(73, 30, 10, 1);
+    padding-left: 10px;
+    padding-top: 5px;
     position: absolute;
+    top: 210px;
+    left: 90px;
+    border-radius: 100px;
+}
+
+.red-icecream-block{
+    position: relative;
+}
+
+.img-red-icecream{
+    width: 100px;
+    height: 350px;
+    position: absolute;
+    top: 527px;
+    left: -250px;
+    z-index: 5;
+    transform:  rotate(20deg);
 }
