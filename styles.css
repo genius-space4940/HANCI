@@ -38,6 +38,7 @@ li{
     gap: 40px;
 }
 
+
 /* Header */
 .header-nav{
     width: 80%;
@@ -86,7 +87,8 @@ li{
     width: 352px;
     position: absolute;
     grid-area: hero-text-btn;
-    top: 100px;
+    top: 20%;
+    left: 4%;  
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -116,19 +118,27 @@ li{
     background-color: rgba(103, 50, 20, 1);
 }
 
-.hero-image-circle-text{
+.hero-image-circle-block{
     width: 210px;
     position: absolute;
-    top: 315px;
-    left: 390px;
+    top: 56%;
+    left: 32%;
     z-index: 2;
+}
+
+.hero-image-circle-text{
+    width: 120px;
+    position: absolute;
+    top: 64.5%;
+    left: 35.8%;
+    z-index: 3;
 }
 
 .hero-image-blue-packet-icecream{
     width: 500px;
     position: absolute;
-    top: 100px;
-    left: 400px;
+    top: 18%;
+    left: 33%;
     z-index: 1;
 }
 
@@ -137,7 +147,8 @@ li{
     display: flex;
     justify-content: end;
     position: relative;
-    top: 20px;
+    top: 10%;
+    right: 15%;
 }
 
 .healthy-border{
@@ -162,7 +173,7 @@ li{
     width: 210px;
     position: absolute;
     left: 0;    
-    top: -145px;
+    top: -62%;
 }
 
 .healthy-text{
@@ -183,8 +194,8 @@ li{
     padding-left: 10px;
     padding-top: 5px;
     position: absolute;
-    top: 210px;
-    left: 90px;
+    top: 85%;
+    left: 40%;
     border-radius: 100px;
     cursor: pointer;
 }
@@ -201,16 +212,16 @@ li{
     width: 269px;
     height: 404px;
     position: absolute;
-    top: 485px;
-    left: -340px;
+    top: 355%;
+    left: -125%;
     z-index: 5;
     transform:  rotate(20deg);
 }
 
 .img-mountain-ash-red-icecream{
     position: absolute;
-    top: 735px;
-    left: -205px;
+    top: 540%;
+    left: -78%;
     transform: rotate(-23deg)
 }
 
@@ -224,8 +235,8 @@ li{
 .lightning-block{
     position: absolute;
 
-    top: 505px;
-    right: 315px;
+    top: 365%;
+    right: 115%;
     transform: rotate(60deg);
     display: flex;
     gap: 15px;
@@ -250,13 +261,67 @@ li{
 .jam-block{
     position: absolute;
     bottom: 0;
-    top: 550px;
-    left: 330px;
+    top: 400%;
+    left: 105%;
     transform: translateX(50%);
 }
 
 .img-mountain-ash-jam{
     position: absolute;
-    top: 75px;
-    left: -60px;
+    top: 80px;
+    left: -40%;
+}
+
+
+/* Main */
+.main-block-text{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #491E0A;
+}
+
+.main-block-text-title{
+    font-size: 128px;
+    font-weight: 600;
+    position: absolute;
+    top: -190px;
+}
+
+.main-block-text-descr{
+    font-size: 24px;
+    font-weight: 600;
+    position: absolute;
+    top: 30px;
+}
+
+.selection-icecream{
+    position: relative;
+}
+
+.selection-icecream-elipse-border{
+    position: absolute;
+    top: 150px;
+    border: 80px solid #F7F4F3;
+    width: 500px;
+    height: 500px;
+    border-radius: 400px;
+}
+
+.selection-icecream-elipse-background{
+    position: absolute;
+    top: 11%;
+    left: 11%;
+    border: 80px solid #F7F4F3;
+    background-color: #F7F4F3;
+    width: 230px;
+    height: 230px;
+    border-radius: 400px;
+}
+
+.selection-icecream-green-icecream{
+    position: absolute;
+    top: -70%;
+    left: -20%;
 }
