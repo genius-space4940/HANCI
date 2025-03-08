@@ -186,6 +186,11 @@ li{
     top: 210px;
     left: 90px;
     border-radius: 100px;
+    cursor: pointer;
+}
+
+.healthy-play-btn:hover{
+    background-color: rgba(103, 50, 20, 1);
 }
 
 .red-icecream-block{
@@ -193,11 +198,65 @@ li{
 }
 
 .img-red-icecream{
-    width: 100px;
-    height: 350px;
+    width: 269px;
+    height: 404px;
     position: absolute;
-    top: 527px;
-    left: -250px;
+    top: 485px;
+    left: -340px;
     z-index: 5;
     transform:  rotate(20deg);
+}
+
+.img-mountain-ash-red-icecream{
+    position: absolute;
+    top: 735px;
+    left: -205px;
+    transform: rotate(-23deg)
+}
+
+.circle-block-text {
+    position: absolute;
+    top: 99%;
+    left: 11%;
+    transform: translate(-50%, -50%);
+}
+
+.lightning-block{
+    position: absolute;
+
+    top: 505px;
+    right: 315px;
+    transform: rotate(60deg);
+    display: flex;
+    gap: 15px;
+}
+
+.blue-lightning {
+    rotate: -20deg;
+}
+
+.red-lightning {
+    rotate: 0deg;
+}
+
+.yellow-lightning {
+    rotate: 20deg;
+}
+
+.jam{
+    position: relative;
+}
+
+.jam-block{
+    position: absolute;
+    bottom: 0;
+    top: 550px;
+    left: 330px;
+    transform: translateX(50%);
+}
+
+.img-mountain-ash-jam{
+    position: absolute;
+    top: 75px;
+    left: -60px;
 }
