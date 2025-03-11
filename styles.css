@@ -478,3 +478,98 @@ li{
 .view-ingredients:hover{
     text-decoration: underline;
 }
+
+.popular {
+  margin-top: 200px;
+  padding-bottom: 200px;
+}
+
+.popular-subtitle{
+    margin-top: 370px;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.popular-arrow{
+    margin-top: 350px;
+}
+
+.section-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popular-slider-btn {
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 24px;
+  background: #e4e2e2;
+  color: #000;
+  border-radius: 100%;
+  transition: all 0.5s ease;
+}
+
+.popular-slider-btn:hover {
+  background: #491e0a;
+  color: #fff;
+}
+
+.popular-container {
+  overflow: hidden; /* Застосовується тільки до контейнера */
+  margin-top: 500px;
+}
+
+.popular-slider {
+  display: grid;
+  grid-template-columns: repeat(9, 373px); /* 9 карток */
+  gap: 40px;
+  transition: transform 0.5s ease-in-out; /* Плавний перехід */
+  padding-top: 100px;
+}
+
+.popular-img-block {
+  height: 350px;
+  width: 100%;
+  background: #F7F4F3;
+  border-radius: 20px;
+  position: relative;
+}
+
+.popular-img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) rotate(20deg);
+}
+
+.popular-text-block {
+  margin-top: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.popular-title {
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.popular-description {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.fa-star {
+  color: #FFD700;
+}
+
+.popular-price {
+  font-size: 20px;
+}
