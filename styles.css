@@ -570,6 +570,12 @@ li{
   color: #FFD700;
 }
 
+.icon-shop{
+    font-size: 40px;
+    margin-right: 30px;
+    margin-top: -50px;
+}
+
 .popular-price {
   font-size: 20px;
 }
