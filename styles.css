@@ -122,11 +122,11 @@ li{
     position: relative;
 
     .hero-image-circle-text{
-        width: 115x;
-        height: 115px;
+        width: 120px;
+        height: 120px;
         position: absolute;
-        top: 66.4%;
-        left: 27.5%;
+        top: 381px;
+        left: 89px;
         transform: translate(-50%, -50%);
         z-index: 3;
     }
@@ -261,8 +261,8 @@ li{
 
 .circle-block-text {
     position: absolute;
-    top: 99%;
-    left: 11%;
+    top: 600px;
+    left: 70px;
     transform: translate(-50%, -50%);
 }
 
@@ -345,11 +345,6 @@ li{
     box-shadow: inset 0 0 0 70px #F7F4F3;
 }
   
-#ball-pink {
-    top: 370px;
-    right: 90px;
-}
-  
 #ball-red {
     top: 20px;
     left: 20px;
@@ -387,7 +382,7 @@ li{
     position: absolute;
     left: 100px;
     top: 390px;
-}
+}   
 
 .icecream-ball-lime{
     position: absolute;
@@ -397,8 +392,10 @@ li{
 
 .icecream-main {
     position: absolute;
-    top: 50%;
-    left: 200px;
+    height: 380px;
+    width: 210px;
+    top: 440px;
+    left: 340px;
     transform: translate(-50%, -50%);
     z-index: 30;
     display: none; /* Приховуємо всі неактивні */
@@ -412,7 +409,7 @@ li{
 .selection-icecream-text {
     position: absolute;
     width: 480px;
-    top: 50%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -475,19 +472,21 @@ li{
 }
 
 .popular-subtitle{
-    margin-top: 370px;
+    margin-bottom: -200px;
     font-weight: 400;
     font-size: 40px;
 }
 
 .popular-arrow{
     margin-top: 350px;
+    cursor: pointer;
 }
 
 .section-name {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: -200px;
 }
 
 .popular-slider-btn {
@@ -568,6 +567,11 @@ li{
     color: white;
     padding: 10px 20px;
     border-radius: 20px;
+    cursor: pointer;
+}
+
+.busket:hover{
+    background-color: rgba(103, 50, 20, 1);
 }
 
 .popular-price {
@@ -620,6 +624,7 @@ li{
         line-height: 50px;
         border-radius: 40px;
         border: 1px solid #000;
+        cursor: pointer;
   
         &:hover {
           background-color: #491e0a;
@@ -764,6 +769,10 @@ li{
     align-items: center;
     justify-content: center;
     left: 0;    
+}
+
+.buy-btn-icecream:hover{
+    background-color: rgba(103, 50, 20, 1);
 }
 
 .ingridients-link{

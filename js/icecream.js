@@ -2,7 +2,7 @@ const balls = document.querySelectorAll('.icecream-ball');
 const images = document.querySelectorAll('.icecream-main');
 
 const imageOrder = ['pistachio', 'orange', 'fruit', 'pink', 'red'];
-const ballOrder = ['ball-green', 'ball-orange', 'ball-fruit', 'ball-pink', 'ball-red'];
+const ballOrder = ['ball-lime', 'ball-orange', 'ball-fruit', 'ball-pink', 'ball-red'];
 
 function updateActiveImage() {
     images.forEach(image => image.classList.remove('active'));
@@ -14,10 +14,12 @@ function updateActiveImage() {
     document.getElementById(currentImageId).classList.add('active');
     document.getElementById(currentBallId).classList.add('active');
 
+    images.style.display = 'none';
+
     activeIndex = (activeIndex + 1) % imageOrder.length;
 }
 
-setInterval(updateActiveImage, 5000);
+setInterval(updateActiveImage, 3000);
 
 balls.forEach(ball => {
     ball.addEventListener('click', function () {
